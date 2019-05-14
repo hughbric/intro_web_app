@@ -1,6 +1,15 @@
 <h1>
   My name is <%= @name %>.
 </h1>
-<div style='border: 30px solid blue'>
-  <img src='http://bit.ly/1eze8aE'>
-</div>
+
+<body>
+  <form action="/named-cat">
+    Name: <input type=“text” name=name>
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <div style='border: 30px solid blue'>
+    <img src='http://bit.ly/1eze8aE'>
+  </div>
+</body>

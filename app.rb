@@ -1,5 +1,7 @@
 require 'sinatra'
 
+set :session_secret, 'super secret'
+
 get '/' do
   "Hello, world!"
 end
@@ -16,6 +18,5 @@ end
 get '/named-cat' do
   p params
   @name = params[:name]
-  @age = params[:age]
   erb(:index)
 end
